@@ -6,17 +6,24 @@ const books = [
   { title: 'Moby-Dick', author: 'Herman Melville', ratings: 3.5 },
 ];
 
-const ratingValueGreaterThanFour = books.filter(function(books){return books.ratings>4})
+//Question1
+const ratingValueGreaterThanFour = books.filter(books => books.ratings>4)
 console.log(ratingValueGreaterThanFour)
 
-const titles = books.map(function(books){return books.title})
+//Question2
+const titles = books.map(books => books.title)
 console.log(titles)
 
-const title1984 = books.find(book => book.title === "1984")
+//Question3
+const title1984 = books.find(book => book.title == "1984")
 console.log(title1984)
 
-const ratingDescending = books.sort((a,b) => b.ratings - a.ratings)
+//Question4
+const ratingDescending = books.sort((book1,book2) => book2.ratings - book1.ratings)
 console.log (ratingDescending)
 
-const ratingHighest = books.sort((a,b) => b.ratings - a.ratings)[0].title
+//Question5
+const ratingHighest = books.sort((book1,book2) => book2.ratings - book1.ratings)[0].title
 console.log(ratingHighest)
+
+//OR console.log(ratingDescending [0].title)

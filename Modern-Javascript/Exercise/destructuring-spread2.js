@@ -8,25 +8,11 @@ const book = {
     }
 };
 
-const {title, author, characters, publication: {year,publisher}} = book
-console.log(title)
-console.log(author)
-console.log(characters)
-console.log(year)
-console.log(publisher)
+//Question1
+const {title, author, characters} = book
+const {publication: {year,publisher}} = book
 
-// const newBook ={
-//     ...book,
-//      publication: {
-//         year: 1978,
-//         publisher: 'Erwin Smith & Hange Zoe'
-//     }
-// }
-
-// console.log(newBook)
-
-
-
+//Question2
 const obj1 = { a: 1, b: 2 };
 const obj2 = { c: 3, d: 4 };
 
@@ -36,15 +22,13 @@ console.log(obj3)
 const obj4 = {...obj1}
 console.log(obj4)
 
-
-
-
+//question3
 const data = {
     numbers1: [1, 2, 3, 4],
     numbers2: [5, 6, 7, 8]
 };
 
-const {numbers1:array1,numbers2:array2} = data
+const {numbers1:array1, numbers2:array2} = data
 console.log(array1)
 console.log(array2)
 
@@ -53,12 +37,4 @@ console.log(array3)
 
 
 
-const numbers = [ 1, 2, 3 ];
-
-function sum(a, b, c) {
-    return a + b + c;
-}
-
-const num =[1, 2, 3]
-console.log(sum(...num))
 
