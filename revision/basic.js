@@ -217,3 +217,4 @@ arayOfAnimalObjects.forEach((animal,index) =>{
     console.log(`My number ${index} animal is ${animal.name}, it is a ${animal.type} and it has ${animal.no_of_legs} number of legs`)
     })
 // =============================== Arrays & Objects ===============================
+
