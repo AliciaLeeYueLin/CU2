@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="destructure-spread.js"></script>
+    <button id="myButton">Click me!</button>
+    <script type="module" src="import-export-callback/callback.js"></script>
+    <script>
+        const button =document.getElementById('myButton')
+        button.addEventListener('click',function handleClick(){
+            console.log("Button was clicked!")
+        })
+    </script>
 </body>
 </html>
