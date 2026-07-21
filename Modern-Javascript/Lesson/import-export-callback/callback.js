@@ -45,29 +45,43 @@ const addTwoNumber =(number1,number2,cubeNumber) =>{
     cubeNumber(sumTwo)
 }
 
-addTwoNumber(6,7,(final) =>{
+addTwoNumber(6,7,(final) => {
     console.log(final**3)
+
 })
 
+//Practice 2
+const waiterServing = (name,numberOfBurger, callBack) => {
+    console.log(`"Hi,${name},This ${numberOfBurger === 1 ? "is" : "are"} ${numberOfBurger} burger${numberOfBurger === 1 ? "" : "s"} that you order,pls enjoy"`)
+    callBack()                     // ^ This is call ternary operator 
+}
 
+waiterServing('alicia',2, () =>{
+    setTimeout(() => {
+        console.log(`Customer starts eating`)
+    },2000)
+    setTimeout(() => {
+        console.log(`"...Thanks"`)
+    },500)
+})
 //Asynchronous Callbacks
 
 //To understand Asynchronous, you have to first understand Synchronous
 
-function dummyDownload(url, callback) {
-    //To stimulate the download
-  setTimeout(() => {
-    console.log(`Downloaded data from ${url}`);
-    //Once the 'download' is complete, use callback function to process the data
-    callback();
-  }, 2000)
-  // As if you are downloading actual data
-  console.log("Downloading data...")
-}
+// function dummyDownload(url, callback) {
+//     //To stimulate the download
+//   setTimeout(() => {
+//     console.log(`Downloaded data from ${url}`);
+//     //Once the 'download' is complete, use callback function to process the data
+//     callback();
+//   }, 2000)
+//   // As if you are downloading actual data
+//   console.log("Downloading data...")
+// }
 
-dummyDownload('https://google.com', function process() {
-  console.log('Now I am processing the data...');
-});
+// dummyDownload('https://google.com', function process() {
+//   console.log('Now I am processing the data...');
+// });
 
 // Downloading data...
 // Downloaded data from https://google.com
