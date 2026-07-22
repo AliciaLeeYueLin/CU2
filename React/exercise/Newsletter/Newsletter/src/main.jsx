@@ -1,10 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import ContactFormExercise from '../components/ContactFormExercise.jsx'
+// import './index.css'
+import NewsletterSubscribe from '../component/newsletter-subscribe.jsx'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ContactFormExercise/>
-  </StrictMode>
+    <NewsletterSubscribe />
+  </StrictMode>,
 )
